@@ -9,6 +9,7 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "@shikijs/transformers": "^1.22.0",
     "@hookform/resolvers": "^3.10.0",
     "@icons-pack/react-simple-icons": "^13.8.0",
     "@radix-ui/react-accordion": "1.2.2",
