@@ -37,9 +37,6 @@ export function Navigation() {
             </a>
           </div>
           <div className="flex items-center gap-3">
-            <Button variant="ghost" size="sm">
-              Sign In
-            </Button>
             <Button size="sm" asChild>
               <a href="https://satguide-demo-frontend.vercel.app/dashboard" target="_blank" rel="noopener noreferrer">
                 Try Demo

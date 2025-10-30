@@ -47,7 +47,7 @@ export function SDKHero() {
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
             <Button size="lg" className="gap-2" asChild>
-              <a href="#quickstart">
+              <a href="https://docs.prepst.com/" target="_blank" rel="noopener noreferrer">
                 <Zap className="h-4 w-4" />
                 Get Started
               </a>
