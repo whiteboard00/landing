@@ -64,7 +64,7 @@ export function SDKHero() {
                 rel="noopener noreferrer"
               >
                 <BookOpen className="h-4 w-4" />
-                View Documentation
+                Try our SDK
               </a>
             </Button>
           </div>

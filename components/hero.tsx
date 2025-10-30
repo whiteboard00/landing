@@ -1,13 +1,16 @@
-"use client"
+"use client";
 
-import { Button } from "@/components/ui/button"
-import { ArrowRight, Brain, GraduationCap } from "lucide-react"
-import { motion } from "framer-motion"
-import Link from "next/link"
+import { Button } from "@/components/ui/button";
+import { ArrowRight, Brain, GraduationCap } from "lucide-react";
+import { motion } from "framer-motion";
+import Link from "next/link";
 
 export function Hero() {
   return (
-    <section className="relative pt-40 pb-32 px-4 sm:px-6 lg:px-8 overflow-hidden bg-cover bg-bottom bg-no-repeat min-h-[80vh] md:min-h-[85vh]" style={{ backgroundImage: 'url(/background.png)' }}>
+    <section
+      className="relative pt-40 pb-32 px-4 sm:px-6 lg:px-8 overflow-hidden bg-cover bg-bottom bg-no-repeat min-h-[80vh] md:min-h-[85vh]"
+      style={{ backgroundImage: "url(/background.png)" }}
+    >
       {/* Background gradient removed to avoid white glow on text */}
 
       <div className="container mx-auto relative">
@@ -30,7 +33,8 @@ export function Hero() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight mb-6 text-balance"
           >
-            We don&apos;t just track scores, <span className="text-primary">we understand your brain</span>
+            We don&apos;t just track scores,{" "}
+            <span className="text-primary">we understand your brain</span>
           </motion.h1>
 
           <motion.p
@@ -39,8 +43,9 @@ export function Hero() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-xl text-muted-foreground mb-10 max-w-2xl mx-auto text-pretty leading-relaxed"
           >
-            Revolutionary platform that models how the human brain learns, identifies unique cognitive patterns, and
-            optimizes learning through personalized interventions.
+            Revolutionary platform that models how the human brain learns,
+            identifies unique cognitive patterns, and optimizes learning through
+            personalized interventions.
           </motion.p>
 
           <motion.div
@@ -54,19 +59,23 @@ export function Hero() {
               className="gap-2 hover:scale-105 transition-transform bg-accent hover:bg-accent/90"
               asChild
             >
-              <a href="https://sat.prepst.com/dashboard" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://sat.prepst.com/dashboard"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Try SAT Demo <ArrowRight className="h-4 w-4" />
               </a>
             </Button>
             <Button
               size="lg"
               variant="outline"
-              className="gap-2 bg-transparent hover:scale-105 transition-transform hover:text-[#8679fc]"
+              className="gap-2 bg-transparent hover:bg-transparent hover:scale-105 transition-transform hover:text-[#8679fc]"
               asChild
             >
               <Link href="/sdk" className="hover:text-[#8679fc]">
                 <Brain className="h-4 w-4" />
-                View Documentation
+                Try our SDK
               </Link>
             </Button>
           </motion.div>
@@ -89,13 +98,17 @@ export function Hero() {
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5, delay: 0.5 + index * 0.1 }}
               >
-                <div className="text-3xl font-bold text-primary mb-1">{stat.value}</div>
-                <div className="text-sm text-muted-foreground">{stat.label}</div>
+                <div className="text-3xl font-bold text-primary mb-1">
+                  {stat.value}
+                </div>
+                <div className="text-sm text-muted-foreground">
+                  {stat.label}
+                </div>
               </motion.div>
             ))}
           </motion.div>
         </div>
       </div>
     </section>
-  )
+  );
 }
