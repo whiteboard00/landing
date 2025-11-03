@@ -144,9 +144,10 @@ export function BusinessModel() {
               key={index}
               variants={cardVariants}
               whileHover={{ y: -10, transition: { duration: 0.3 } }}
+              className="h-full"
             >
               <Card
-                className={`p-8 relative bg-white shadow-sm hover:shadow-md transition-shadow duration-300 ${
+                className={`p-8 relative bg-white shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col h-full ${
                   plan.popular ? "border-gray-300" : ""
                 }`}
               >
@@ -191,7 +192,7 @@ export function BusinessModel() {
                     <span className="text-gray-500">{plan.period}</span>
                   </motion.div>
                 </div>
-                <ul className="space-y-3 mb-6">
+                <ul className="space-y-3 mb-6 flex-1">
                   {plan.features.map((feature, idx) => (
                     <motion.li
                       key={idx}
