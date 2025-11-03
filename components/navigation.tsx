@@ -1,3 +1,5 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import { Brain } from "lucide-react";
 
@@ -52,15 +54,27 @@ export function Navigation() {
               </a>
             </div>
             <div className="flex items-center gap-3">
-              <Button size="sm" asChild>
-                <a
-                  href="https://satguide-demo-frontend.vercel.app/dashboard"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Try Demo
-                </a>
-              </Button>
+              <a
+                href="https://satguide-demo-frontend.vercel.app/dashboard"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium h-8 px-3 text-white transition-all"
+                style={
+                  {
+                    backgroundColor: "oklch(0.65 0.18 285)",
+                    "--hover-bg": "oklch(0.58 0.18 285)",
+                  } as React.CSSProperties & { "--hover-bg": string }
+                }
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.backgroundColor = "var(--hover-bg)";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.backgroundColor =
+                    "oklch(0.65 0.18 285)";
+                }}
+              >
+                Try Demo
+              </a>
             </div>
           </div>
         </div>

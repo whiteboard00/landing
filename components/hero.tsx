@@ -56,7 +56,7 @@ export function Hero() {
           >
             <Button
               size="lg"
-              className="gap-2 hover:scale-105 transition-transform bg-accent hover:bg-accent/90"
+              className="gap-2 hover:scale-105 transition-transform"
               asChild
             >
               <a
