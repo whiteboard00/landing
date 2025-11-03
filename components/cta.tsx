@@ -6,7 +6,7 @@ export function CTA() {
     <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-primary/10 via-background to-accent/10">
       <div className="container mx-auto">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-balance">Ready to Transform Learning?</h2>
+          <h2 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 text-balance tracking-tight">Ready to Transform Learning?</h2>
           <p className="text-lg text-muted-foreground mb-8 text-pretty leading-relaxed">
             Join the cognitive revolution. Start building personalized learning experiences powered by the world&apos;s
             first cognitive learning engine.

@@ -26,7 +26,7 @@ export function SATDemo() {
               transition={{ duration: 0.6 }}
             >
               <Badge className="mb-4 bg-secondary text-secondary-foreground">Live Demo Available</Badge>
-              <h2 className="text-4xl sm:text-5xl font-bold mb-6 text-balance">
+              <h2 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 text-balance tracking-tight">
                 See Our Engine in Action: <span className="text-primary">SAT Test Prep</span>
               </h2>
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
@@ -96,6 +96,7 @@ export function SATDemo() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                 transition={{ duration: 0.5, delay: 0.5 }}
+                className="space-y-4"
               >
                 <Button size="lg" className="gap-2 hover:scale-105 transition-transform" asChild>
                   <a

@@ -14,7 +14,7 @@ export function Architecture() {
     <section className="py-20 px-4 sm:px-6 lg:px-8">
       <div className="container mx-auto">
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-balance">Cognitive Engine Architecture</h2>
+          <h2 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 text-balance tracking-tight">Cognitive Engine Architecture</h2>
           <p className="text-lg text-muted-foreground text-pretty leading-relaxed">
             Built on cutting-edge cognitive science and machine learning principles
           </p>

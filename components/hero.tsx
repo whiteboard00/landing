@@ -3,9 +3,27 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Brain, GraduationCap } from "lucide-react";
 import { motion } from "framer-motion";
+import { useInView } from "framer-motion";
+import { useRef } from "react";
 import Link from "next/link";
+import { WaitlistSignup } from "@/components/waitlist-signup";
+
+const titleVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.8,
+      ease: [0.22, 1, 0.36, 1] as const,
+    },
+  },
+};
 
 export function Hero() {
+  const titleRef = useRef(null);
+  const titleInView = useInView(titleRef, { once: true, margin: "-50px" });
+
   return (
     <section
       className="relative pt-40 pb-32 px-4 sm:px-6 lg:px-8 overflow-hidden bg-cover bg-bottom bg-no-repeat min-h-[80vh] md:min-h-[85vh]"
@@ -27,21 +45,39 @@ export function Hero() {
             </span>
           </motion.div>
 
-          <motion.h1
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.1 }}
-            className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight mb-6 text-balance"
+          <motion.div
+            ref={titleRef}
+            initial="hidden"
+            animate={titleInView ? "visible" : "hidden"}
+            variants={titleVariants}
+            className="mb-6"
           >
-            We don&apos;t just track scores,{" "}
-            <span className="text-primary">we understand your brain</span>
-          </motion.h1>
+            <motion.h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight text-balance">
+              We don&apos;t just track scores, we understand{" "}
+              <motion.span
+                className="text-primary inline-block"
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={
+                  titleInView
+                    ? { opacity: 1, scale: 1 }
+                    : { opacity: 0, scale: 0.8 }
+                }
+                transition={{
+                  delay: 0.4,
+                  duration: 0.6,
+                  ease: [0.22, 1, 0.36, 1],
+                }}
+              >
+                your brain
+              </motion.span>
+            </motion.h1>
+          </motion.div>
 
           <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
             className="text-xl text-muted-foreground mb-10 max-w-2xl mx-auto text-pretty leading-relaxed"
+            initial={{ opacity: 0 }}
+            animate={titleInView ? { opacity: 1 } : { opacity: 0 }}
+            transition={{ delay: 0.6, duration: 0.6 }}
           >
             Revolutionary platform that models how the human brain learns,
             identifies unique cognitive patterns, and optimizes learning through
@@ -78,6 +114,15 @@ export function Hero() {
                 Try our SDK
               </Link>
             </Button>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.35 }}
+            className="mt-8 max-w-md mx-auto w-full"
+          >
+            <WaitlistSignup />
           </motion.div>
 
           <motion.div
