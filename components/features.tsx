@@ -2,11 +2,11 @@
 
 import { Card } from "@/components/ui/card";
 import { Share2, Users, GitMerge, PenTool } from "lucide-react";
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 
-const containerVariants = {
+const containerVariants: Variants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
@@ -17,7 +17,7 @@ const containerVariants = {
   },
 };
 
-const itemVariants = {
+const itemVariants: Variants = {
   hidden: { opacity: 0, y: 30, scale: 0.95 },
   visible: {
     opacity: 1,
@@ -25,19 +25,19 @@ const itemVariants = {
     scale: 1,
     transition: {
       duration: 0.6,
-      ease: [0.22, 1, 0.36, 1],
+      ease: [0.22, 1, 0.36, 1] as [number, number, number, number],
     },
   },
 };
 
-const titleVariants = {
+const titleVariants: Variants = {
   hidden: { opacity: 0, y: 20 },
   visible: {
     opacity: 1,
     y: 0,
     transition: {
       duration: 0.8,
-      ease: [0.22, 1, 0.36, 1],
+      ease: [0.22, 1, 0.36, 1] as [number, number, number, number],
     },
   },
 };
@@ -101,7 +101,7 @@ export function Features() {
               transition={{
                 delay: 0.4,
                 duration: 0.6,
-                ease: [0.22, 1, 0.36, 1],
+                ease: [0.22, 1, 0.36, 1] as [number, number, number, number],
               }}
             >
               focus.
