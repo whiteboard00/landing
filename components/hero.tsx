@@ -1,7 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Brain, GraduationCap } from "lucide-react";
+import { ArrowRight, Brain, GraduationCap, BookOpen } from "lucide-react";
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
@@ -106,13 +106,29 @@ export function Hero() {
             <Button
               size="lg"
               variant="outline"
-              className="gap-2 bg-transparent hover:bg-transparent hover:scale-105 transition-transform hover:text-[#8679fc]"
+              className="gap-2 bg-[#FAC07A] hover:bg-[#FAC07A]/90 hover:scale-105 transition-transform text-white border-[#FAC07A]"
               asChild
             >
-              <Link href="/sdk" className="hover:text-[#8679fc]">
+              <Link href="/sdk" className="text-white">
                 <Brain className="h-4 w-4" />
                 Try our SDK
               </Link>
+            </Button>
+            <Button
+              size="lg"
+              variant="outline"
+              className="gap-2 bg-transparent hover:bg-transparent hover:scale-105 transition-transform hover:text-[#8679fc]"
+              asChild
+            >
+              <a
+                href="https://docs.prepst.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-[#8679fc]"
+              >
+                <BookOpen className="h-4 w-4" />
+                Documentation
+              </a>
             </Button>
           </motion.div>
 
