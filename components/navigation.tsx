@@ -15,9 +15,7 @@ export function Navigation() {
             </div>
             <div className="hidden md:flex items-center gap-8">
               <a
-                href="https://satguide-demo-frontend.vercel.app/dashboard"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="#sat-demo"
                 className="text-sm font-medium text-primary hover:text-primary/80 transition-colors"
               >
                 SAT Demo

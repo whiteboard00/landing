@@ -14,7 +14,8 @@ export function SATDemo() {
 
   return (
     <section
-      className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-primary/5 via-background to-secondary/5"
+      id="sat-demo"
+      className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-primary/5 via-background to-secondary/5 scroll-mt-24"
       ref={ref}
     >
       <div className="container mx-auto">
