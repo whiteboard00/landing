@@ -21,7 +21,10 @@ import {
 
 export function SDKHero() {
   return (
-    <section className="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
+    <section 
+      className="relative pt-32 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden bg-cover bg-bottom bg-no-repeat min-h-[80vh] md:min-h-[85vh]"
+      style={{ backgroundImage: "url(/background.png)" }}
+    >
       <div className="container mx-auto max-w-6xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
