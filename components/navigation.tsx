@@ -28,30 +28,6 @@ export function Navigation() {
               >
                 SDK
               </a>
-              <a
-                href="#solution"
-                className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-              >
-                Solution
-              </a>
-              <a
-                href="#features"
-                className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-              >
-                Features
-              </a>
-              <a
-                href="#business"
-                className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-              >
-                Business
-              </a>
-              <a
-                href="#impact"
-                className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-              >
-                Impact
-              </a>
             </div>
             <div className="flex items-center gap-3">
               <a
@@ -73,7 +49,7 @@ export function Navigation() {
                     "oklch(0.65 0.18 285)";
                 }}
               >
-                Try Demo
+                Try for Free
               </a>
             </div>
           </div>

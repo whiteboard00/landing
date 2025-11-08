@@ -105,7 +105,7 @@ export function SATDemo() {
                     rel="noopener noreferrer"
                   >
                     <GraduationCap className="h-5 w-5" />
-                    Try SAT Demo Now <ExternalLink className="h-4 w-4" />
+                    Try for Free <ExternalLink className="h-4 w-4" />
                   </a>
                 </Button>
               </motion.div>

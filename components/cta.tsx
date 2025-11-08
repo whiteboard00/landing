@@ -22,10 +22,10 @@ export function CTA() {
                 rel="noopener noreferrer"
               >
                 <GraduationCap className="h-5 w-5" />
-                Try SAT Demo
+                Try for Free
               </a>
             </Button>
-            <Button
+            {/* <Button
               size="lg"
               variant="outline"
               className="gap-2 bg-transparent"
@@ -39,7 +39,7 @@ export function CTA() {
             >
               <Mail className="h-4 w-4" />
               Contact Sales
-            </Button>
+            </Button> */}
           </div>
         </div>
       </div>

@@ -103,7 +103,7 @@ export function Hero() {
                 Try SAT Demo <ArrowRight className="h-4 w-4" />
               </a>
             </Button>
-            <Button
+            {/* <Button
               size="lg"
               variant="outline"
               className="gap-2 bg-[#FAC07A] hover:bg-[#FAC07A]/90 hover:scale-105 transition-transform text-white border-[#FAC07A]"
@@ -113,8 +113,8 @@ export function Hero() {
                 <Brain className="h-4 w-4" />
                 Try our SDK
               </Link>
-            </Button>
-            <Button
+            </Button> */}
+            {/* <Button
               size="lg"
               variant="outline"
               className="gap-2 bg-transparent hover:bg-transparent hover:scale-105 transition-transform hover:text-[#8679fc]"
@@ -129,7 +129,7 @@ export function Hero() {
                 <BookOpen className="h-4 w-4" />
                 Documentation
               </a>
-            </Button>
+            </Button> */}
           </motion.div>
 
           <motion.div
