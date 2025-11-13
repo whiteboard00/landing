@@ -136,7 +136,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.35 }}
-            className="mt-8 max-w-md mx-auto w-full"
+            className="mt-8 w-full"
           >
             <WaitlistSignup />
           </motion.div>

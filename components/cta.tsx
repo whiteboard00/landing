@@ -3,8 +3,27 @@ import { ArrowRight, Mail, GraduationCap } from "lucide-react";
 
 export function CTA() {
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-primary/10 via-background to-accent/10">
-      <div className="container mx-auto">
+    <section 
+      className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-primary/10 via-background to-accent/10 relative"
+      style={{
+        backgroundImage: "url(/backpaint.png)",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat"
+      }}
+    >
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-background/80 to-accent/10"></div>
+      <div className="w-full mb-12 relative z-10 -mx-4 sm:-mx-6 lg:-mx-8 flex justify-center">
+        <video
+          src="/intr2o gif.mp4"
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="w-11/12 max-w-4xl h-auto rounded-lg shadow-lg"
+        />
+      </div>
+      <div className="container mx-auto relative z-10">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 text-balance tracking-tight">
             Ready to Transform Learning?
